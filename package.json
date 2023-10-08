@@ -1,0 +1,16 @@
+{
+  "name": "wthn",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "16.10.0",
+    "nx": "16.10.0",
+    "nx-cloud": "latest"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
