@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@wthn/for": ["modules/directives/for/src/index.js"],
+      "@wthn/if-else": ["modules/directives/if-else/src/index.js"],
+      "@wthn/interpolation": ["modules/interpolation/src/index.js"],
+      "@wthn/ioc": ["modules/ioc/src/index.js"],
+      "@wthn/swap": ["modules/directives/swap/src/index.js"],
+      "@wthn/utils": ["modules/utils/src/index.js"],
+      "wthn": ["wthn/src/index.js"]
+    },
+    "types": ["bun-types"]
+  },
+  "exclude": ["node_modules", "tmp"]
+}

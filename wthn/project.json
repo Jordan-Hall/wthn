@@ -1,0 +1,59 @@
+{
+  "name": "wthn",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "wthn/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx-bun/nx:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "entrypoints": ["wthn/src/index.js"],
+        "outputPath": "dist/wthn",
+        "smol": false,
+        "bun": true
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs wthn {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["wthn/**/*.ts", "wthn/package.json"]
+      }
+    },
+    "test": {
+      "executor": "@nx-bun/nx:test",
+      "options": {
+        "smol": false,
+        "bail": true,
+        "bun": false
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "postTargets": ["wthn:npm", "wthn:github"],
+        "versionTagPrefix": "v"
+      }
+    },
+    "github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
+      }
+    },
+    "npm": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    }
+  },
+  "tags": []
+}

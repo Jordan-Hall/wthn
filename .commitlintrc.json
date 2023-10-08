@@ -1,0 +1,26 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "type-enum": [
+      2,
+      "always",
+      ["feat", "fix", "docs", "refactor", "cleanup", "chore"]
+    ],
+    "scope-enum": [
+      2,
+      "always",
+      [
+        "wthn",
+        "docs",
+        "for",
+        "if-else",
+        "swap",
+        "ioc",
+        "utils",
+        "interpolation",
+        "wthn-workspaces"
+      ]
+    ],
+    "header-max-length": [2, "always", 100]
+  }
+}
