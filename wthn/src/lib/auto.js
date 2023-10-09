@@ -1,5 +1,5 @@
 /* eslint-disable @nx/enforce-module-boundaries */
-import { bindEvents } from './events.js';
+import { bindEvents } from './events';
 import { AutoInitContainer } from '@wthn/ioc';
 
 /**
