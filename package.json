@@ -1,6 +1,6 @@
 {
   "name": "wthn-workspaces",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "IDGAF-1.0",
   "scripts": {
     "postinstall": "patch-package",
