@@ -1,2 +1,2 @@
-export * from './lib/is-dom-element.js';
-export * from './lib/observable.js';
+export * from './lib/is-dom-element';
+export * from './lib/observable';

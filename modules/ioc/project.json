@@ -9,6 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "entrypoints": ["modules/ioc/src/index.js"],
+        "tsConfig": "modules/ioc/tsconfig.lib.json",
         "outputPath": "dist/ioc",
         "smol": false,
         "bun": true

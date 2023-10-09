@@ -1,4 +1,4 @@
-import { getContextForElement } from './context.js';
+import { getContextForElement } from './context';
 /**
  *
  * @param {Element} rootElement

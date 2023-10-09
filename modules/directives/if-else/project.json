@@ -10,6 +10,7 @@
       "options": {
         "entrypoints": ["modules/directives/if-else/src/index.js"],
         "outputPath": "dist/if-else",
+        "tsConfig": "modules/directives/if-else/tsconfig.lib.json",
         "smol": false,
         "bun": true
       }

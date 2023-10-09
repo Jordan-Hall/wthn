@@ -1,5 +1,5 @@
 import { AutoInitContainer } from '@wthn/ioc';
-import { ForDirective } from './for.js';
+import { ForDirective } from './for';
 export function ManualInit() {
   const directives = document.querySelectorAll('[wthn-for]');
   directives.forEach((directiveElement) => {

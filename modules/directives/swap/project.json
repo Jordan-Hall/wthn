@@ -10,6 +10,7 @@
       "options": {
         "entrypoints": ["modules/directives/swap/src/index.js"],
         "outputPath": "dist/swap",
+        "tsConfig": "modules/directives/swap/tsconfig.lib.json",
         "smol": false,
         "bun": true
       }

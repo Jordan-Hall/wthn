@@ -1,5 +1,5 @@
 import { AutoInitContainer } from '@wthn/ioc';
-import { IfElseDirective } from './if-else.js';
+import { IfElseDirective } from './if-else';
 export function ManualInit() {
   const directives = document.querySelectorAll('[wthn-if]');
   directives.forEach((directiveElement) => {

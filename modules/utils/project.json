@@ -10,6 +10,7 @@
       "options": {
         "entrypoints": ["modules/utils/src/index.js"],
         "outputPath": "dist/utils",
+        "tsConfig": "modules/utils/tsconfig.lib.json",
         "smol": false,
         "bun": true
       }

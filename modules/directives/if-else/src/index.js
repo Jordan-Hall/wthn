@@ -1,2 +1,2 @@
-export * from './lib/if-else.js';
-export * from './lib/init.js';
+export * from './lib/if-else';
+export * from './lib/init';

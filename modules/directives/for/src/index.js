@@ -1,2 +1,2 @@
-export * from './lib/for.js';
-export * from './lib/init.js';
+export * from './lib/for';
+export * from './lib/init';

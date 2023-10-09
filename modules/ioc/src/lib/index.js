@@ -1,5 +1,5 @@
-import { DIContainer } from './di.js';
-import { isDomObj } from '../utils/is-dom-element.js';
+import { DIContainer } from './di';
+import { isDomObj } from '@wthn/utils';
 /**
  * @export
  * @class AutoInitContainer

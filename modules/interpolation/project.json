@@ -10,6 +10,7 @@
       "options": {
         "entrypoints": ["modules/interpolation/src/index.js"],
         "outputPath": "dist/interpolation",
+        "tsConfig": "modules/interpolation/tsconfig.lib.json",
         "smol": false,
         "bun": true
       }

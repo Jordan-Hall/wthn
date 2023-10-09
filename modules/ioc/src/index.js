@@ -1,1 +1,1 @@
-export * from './lib/ioc.js';
+export * from './lib/index';
