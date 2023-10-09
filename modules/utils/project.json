@@ -5,14 +5,15 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nx-bun/nx:build",
+      "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "entrypoints": ["modules/utils/src/index.js"],
         "outputPath": "dist/utils",
+        "main": "modules/utils/src/index.js",
         "tsConfig": "modules/utils/tsconfig.lib.json",
-        "smol": false,
-        "bun": true
+        "assets": ["modules/utils/*.md"],
+        "generatePackageJson": true,
+        "format": ["cjs", "esm"]
       }
     },
     "publish": {
