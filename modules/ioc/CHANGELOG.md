@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/Jordan-Hall/wthn/compare/ioc-0.1.0...ioc-0.2.0) (2023-10-09)
+
+
+### Features
+
+* add correct nx build ([6278607](https://github.com/Jordan-Hall/wthn/commit/62786070a5a06ed6946c4ba7820ab3804175bafe))
+
 ## 0.1.0 (2023-10-09)
 
 ### Features
